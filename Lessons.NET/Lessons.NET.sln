@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPLessons", "OOPLessons\OOPLessons.csproj", "{BC35BFBD-80B2-4ABB-B0E9-895A06D7477C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLesson(ValueType)(Class)", "SecondLesson(ValueType)\SecondLesson(ValueType)(Class).csproj", "{FAF7446F-B415-483A-816D-99D1C9B50058}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLesson(ValueType)(Class)", "SecondLesson(ValueType)(Class)\SecondLesson(ValueType)(Class).csproj", "{FAF7446F-B415-483A-816D-99D1C9B50058}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLesson(ValueType)(Structure)", "SecondLesson(ValueType)(Structure)\SecondLesson(ValueType)(Structure).csproj", "{6EB5F693-DE52-49FB-AACC-B6BDE42CF5F1}"
 EndProject

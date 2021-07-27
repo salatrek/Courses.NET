@@ -4,7 +4,6 @@ namespace SecondLesson_ValueType_
 {
     public class Figure
     {
-        public string Name { get; set; }
         public float NumbersOfFaces { get; set; }
         public float FaceLength { get; set; }
         public float FigureArea { get; set; }
