@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLesson(ValueType)(Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLesson(ValueType)(Structure)", "SecondLesson(ValueType)(Structure)\SecondLesson(ValueType)(Structure).csproj", "{6EB5F693-DE52-49FB-AACC-B6BDE42CF5F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxing_Unboxing", "Boxing_Unboxing\Boxing_Unboxing.csproj", "{05F34D11-6A99-47D9-B2E3-341A308446CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6EB5F693-DE52-49FB-AACC-B6BDE42CF5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB5F693-DE52-49FB-AACC-B6BDE42CF5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB5F693-DE52-49FB-AACC-B6BDE42CF5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F34D11-6A99-47D9-B2E3-341A308446CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F34D11-6A99-47D9-B2E3-341A308446CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F34D11-6A99-47D9-B2E3-341A308446CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F34D11-6A99-47D9-B2E3-341A308446CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
