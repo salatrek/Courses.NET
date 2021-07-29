@@ -43,9 +43,9 @@ namespace SecondLesson_ValueType__Structure_
             figure.FigureArea = (numbersOfFaces * (float)Math.Pow(facesLenght, 2)) / (4 * (float)Math.Tan(180 / numbersOfFaces));
 
             Figure secondFigure = figure;
-            figure.FigureArea = 15;
+            secondFigure.FigureArea = 15;
 
-            return secondFigure;
+            return figure;
         }
     
 }
