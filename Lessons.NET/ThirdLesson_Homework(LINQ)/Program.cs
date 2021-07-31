@@ -41,6 +41,10 @@ namespace ThirdLesson_Homework_LINQ_
             {
                 Console.WriteLine($"{item.ClientName} {item.AccountBalance} {item.PassportID}");
             }
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine($"Общая сумма: {ShowTotalBalances(listOfClients)}");
             
             Console.ReadKey();
         }
@@ -71,6 +75,12 @@ namespace ThirdLesson_Homework_LINQ_
         {
             var minBalance = listOfClients.Min(x => x.AccountBalance);
             return listOfClients.Where(x => x.AccountBalance == minBalance).ToArray();
+        }
+
+        static int ShowTotalBalances(List<Client> listOfClients)
+        {
+            int totalBalance;
+            return totalBalance = (int)listOfClients.Sum(x => x.AccountBalance);
         }
     }
 }
