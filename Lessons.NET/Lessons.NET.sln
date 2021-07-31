@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxing_Unboxing", "Boxing_U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdLesson(Equals)", "ThirdLesson(Equals)\ThirdLesson(Equals).csproj", "{C339B490-96D5-4FE2-997F-B8A13A17C9EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdLesson_Homework(Equals_GetHashCode)", "ThirdLesson_Homework(Equals_GetHashCode)\ThirdLesson_Homework(Equals_GetHashCode).csproj", "{5821E496-A3E2-4A7D-96AC-14040EFE52BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdLesson_Homework(LINQ)", "ThirdLesson_Homework(LINQ)\ThirdLesson_Homework(LINQ).csproj", "{997BF433-F490-4B79-89D4-203ADA4967F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C339B490-96D5-4FE2-997F-B8A13A17C9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C339B490-96D5-4FE2-997F-B8A13A17C9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C339B490-96D5-4FE2-997F-B8A13A17C9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5821E496-A3E2-4A7D-96AC-14040EFE52BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5821E496-A3E2-4A7D-96AC-14040EFE52BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5821E496-A3E2-4A7D-96AC-14040EFE52BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5821E496-A3E2-4A7D-96AC-14040EFE52BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997BF433-F490-4B79-89D4-203ADA4967F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997BF433-F490-4B79-89D4-203ADA4967F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997BF433-F490-4B79-89D4-203ADA4967F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997BF433-F490-4B79-89D4-203ADA4967F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

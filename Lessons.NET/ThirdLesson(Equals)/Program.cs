@@ -33,24 +33,16 @@ namespace ThirdLesson_Equals_
 
         public static void CreateClient(List<Client>  listOfClients, Client client)
         {
-            try
-            {
-                if (!listOfClients.Contains(client))
-                {
-                    listOfClients.Add(client);
-                }
-                else
-                {
-                    Console.WriteLine($"Пользоваель {client.ClientName} уже существует");
-                }
-               
-           
-            }
-            catch (ArgumentNullException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
 
+            if (!listOfClients.Contains(client))
+            {
+                listOfClients.Add(client);
+            }
+            else
+            {
+                Console.WriteLine($"Пользоваель {client.ClientName} уже существует");
+            }
+              
         }
         
     }
