@@ -16,8 +16,6 @@ namespace ThirdLesson_Equals_
             Client Alex2 = new Client("Mospan Alexey Alexandrovich", 450, 580);
             Client Alex3 = new Client("Mospan Alexey Alexandrovich", 450, 574);
 
-
-
             List<Client> listOfClients = new List<Client>();
 
             CreateClient(listOfClients, Alex);
@@ -26,10 +24,9 @@ namespace ThirdLesson_Equals_
             CreateClient(listOfClients, Elena);
             CreateClient(listOfClients, Alex2);
             CreateClient(listOfClients, Alex3);
-
+            
             Console.ReadKey();
         }
-
 
         public static void CreateClient(List<Client>  listOfClients, Client client)
         {
