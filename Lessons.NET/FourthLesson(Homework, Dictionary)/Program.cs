@@ -15,6 +15,8 @@ namespace FourthLesson_Homework__Dictionary_
             Alex.AddAccount(540, new Account(Rubles, 900));
             Alex.AddAccount(850, new Account(Euro, 500));
 
+            Alex.ChangeBalance(540, -880);
+
             foreach (var item in Alex.clientAccounts)
             {
                 Console.WriteLine($"{nameof(item.Value.TypeOfCurrency)} {item.Value.AccountBalance}");

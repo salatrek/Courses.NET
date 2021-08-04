@@ -45,20 +45,40 @@ namespace FourthLesson_Homework__Dictionary_
 
         public void ExchangeMoney(int sourceAccount, double count, int targerAccount)
         {
-            if (clientAccounts.ContainsKey(sourceAccount) && clientAccounts.ContainsKey(targerAccount))
+            if (clientAccounts[sourceAccount].AccountBalance > count)
             {
+                if (clientAccounts.ContainsKey(sourceAccount) && clientAccounts.ContainsKey(targerAccount))
+                {
 
-                var sourceBalance = clientAccounts[sourceAccount].AccountBalance;
-                var sourceRate = clientAccounts[sourceAccount].TypeOfCurrency.Rate;
+                    var sourceBalance = clientAccounts[sourceAccount].AccountBalance;
+                    var sourceRate = clientAccounts[sourceAccount].TypeOfCurrency.Rate;
 
-                var targetBalance = clientAccounts[targerAccount].AccountBalance;
-                var targetRate = clientAccounts[targerAccount].TypeOfCurrency.Rate;
+                    var targetBalance = clientAccounts[targerAccount].AccountBalance;
+                    var targetRate = clientAccounts[targerAccount].TypeOfCurrency.Rate;
 
-                sourceBalance = sourceBalance - count;
-                targetBalance = targetBalance + (sourceBalance / sourceRate) * targetRate;
+                    sourceBalance = sourceBalance - count;
+                    targetBalance = targetBalance + (sourceBalance / sourceRate) * targetRate;
 
-                clientAccounts[sourceAccount].AccountBalance = sourceBalance;
-                clientAccounts[targerAccount].AccountBalance = targetBalance;
+                    clientAccounts[sourceAccount].AccountBalance = sourceBalance;
+                    clientAccounts[targerAccount].AccountBalance = targetBalance;
+                }
+            }
+            else
+            {
+                throw new ArithmeticException();
+            }
+        }
+
+        public void ChangeBalance(int sourceAccount, double count)
+        {
+            var sourceBalance = clientAccounts[sourceAccount].AccountBalance;
+            if (sourceBalance >= count)
+            {
+                clientAccounts[sourceAccount].AccountBalance = sourceBalance + count;
+            }
+            else 
+            {
+                throw new ArithmeticException();
             }
         }
     }
