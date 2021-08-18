@@ -13,10 +13,27 @@ namespace EighthLesson_Serialization_
         {
             var Triangle = new Figure() { Name = "Triangle", SideCount = 3, SideLenght = 1 };
             List<Figure> figlist = new List<Figure>() { Triangle, Triangle, Triangle };
+            List<Figure> xmlFigure = new List<Figure>();
+            List<Figure> binFigure = new List<Figure>();
 
-            var account = new Account() { AccountBalance = 700, TypeOfCurrency = new Currency() { Rate = 78.6f } };
+            Person person = new Person() { Name = "Alex", Age = 18};
+            person.NextPerson = person;
 
-            var serAccount = JsonConvert.SerializeObject(account);
+
+            try
+            {
+                var serPerson = JsonConvert.SerializeObject(person);
+            }
+            catch (JsonSerializationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            XMLSerialize(figlist);
+            BinarySerialize(figlist);
+
+            xmlFigure = XMLDeserialeze("figures.xml");
+            binFigure = BinaryDeserialize("figures.dat");
 
         }
         public static string JSonSerialize(List<Figure> figlist)
@@ -39,13 +56,14 @@ namespace EighthLesson_Serialization_
             }
         }
 
-        public static void XMLDeserialeze(string path)
+        public static List<Figure> XMLDeserialeze(string path)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Figure>));
 
             using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
             {
-                xmlSerializer.Deserialize(fileStream);
+                return (List<Figure>)xmlSerializer.Deserialize(fileStream);
+                
             }
         }
 
@@ -53,19 +71,19 @@ namespace EighthLesson_Serialization_
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
 
-            using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream("figures.dat", FileMode.OpenOrCreate))
             {
                 binaryFormatter.Serialize(fileStream, figlist);
             }
         }
 
-        public static void BinaryDeserialize()
+        public static List<Figure> BinaryDeserialize(string path)
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
 
-            using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate))
             {
-                binaryFormatter.Deserialize(fileStream);
+                return (List<Figure>)binaryFormatter.Deserialize(fileStream);
             }
         }
     }

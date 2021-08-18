@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace EighthLesson_Serialization_
 {
-    [Serializable]
-    public class Figure
+    public class Person
     {
         public string Name { get; set; }
-        public int SideCount { get; set; }
-        public double SideLenght { get; set; }
-        public Figure()
-        { }
+        public int Age { get; set; }
+        public Person NextPerson { get; set; }
     }
 }
