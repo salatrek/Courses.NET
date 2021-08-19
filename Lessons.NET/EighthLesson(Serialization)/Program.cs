@@ -16,7 +16,7 @@ namespace EighthLesson_Serialization_
             List<Figure> xmlFigure = new List<Figure>();
             List<Figure> binFigure = new List<Figure>();
 
-            Person person = new Person() { Name = "Alex", Age = 18};
+            Person person = new Person() { Name = "Alex", Age = 18 };
             person.NextPerson = person;
 
 
@@ -29,8 +29,12 @@ namespace EighthLesson_Serialization_
                 Console.WriteLine(ex.Message);
             }
 
+            Triangle triangle = new Triangle() { Name = "Triangle", SideCount = 3, SideLenght = 2, Area = 5 };
+
             XMLSerialize(figlist);
             BinarySerialize(figlist);
+
+            XMLSerializeTest(triangle);
 
             xmlFigure = XMLDeserialeze("figures.xml");
             binFigure = BinaryDeserialize("figures.dat");
@@ -49,7 +53,7 @@ namespace EighthLesson_Serialization_
         public static void XMLSerialize(List<Figure> figlist)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(figlist.GetType());
-            
+
             using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
             {
                 xmlSerializer.Serialize(fileStream, figlist);
@@ -63,7 +67,7 @@ namespace EighthLesson_Serialization_
             using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
             {
                 return (List<Figure>)xmlSerializer.Deserialize(fileStream);
-                
+
             }
         }
 
@@ -84,6 +88,27 @@ namespace EighthLesson_Serialization_
             using (FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate))
             {
                 return (List<Figure>)binaryFormatter.Deserialize(fileStream);
+            }
+        }
+
+        public static void XMLSerializeTest(Figure figure)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(figure.GetType());
+
+            using (FileStream fileStream = new FileStream("figure.xml", FileMode.OpenOrCreate))
+            {
+                xmlSerializer.Serialize(fileStream, figure);
+            }
+        }
+
+        public static Figure XMLDeserialezeTest(string path)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Figure));
+
+            using (FileStream fileStream = new FileStream("figures.xml", FileMode.OpenOrCreate))
+            {
+                return (Figure)xmlSerializer.Deserialize(fileStream);
+
             }
         }
     }
