@@ -38,8 +38,8 @@ namespace NinethLesson_Reflection_
                 Console.WriteLine($"{item.Name}\t{item.GetValue(obj)}");
             }
 
-            PropertyInfo[] properties = type.GetProperties(BindingFlags.NonPublic | BindingFlags.Instance);
             Console.WriteLine("\nProperties   ***");
+            PropertyInfo[] properties = type.GetProperties(BindingFlags.NonPublic | BindingFlags.Instance);
             foreach (var item in properties)
             {
                 Console.WriteLine($"{item.Name}\t{item.GetValue(obj)}");
