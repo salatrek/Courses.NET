@@ -13,8 +13,8 @@ namespace FifthLesson_GenericType_
 
             var propertyCalculator = new PropertyCalculator<ICost>();
             
-            propertyCalculator.Add<ICost>(clientCat);
-            propertyCalculator.Add(clientAutomobile);
+            //propertyCalculator.Add<ICost>(clientCat);
+            //propertyCalculator.Add(clientAutomobile);
 
             Console.WriteLine(propertyCalculator.TotalCost);
         }

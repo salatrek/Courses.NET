@@ -24,5 +24,18 @@ namespace SixthLesson_Delegate_
         }
     }
 
+    class TestClass
+    {
+        private void TestMethod()
+        {
+            var testFunc = new Func<string, float, bool, int>(TestMethodWithParams);
+            var result = testFunc.Invoke("", 0f, true);
+        }
+
+        private int TestMethodWithParams(string str, float fl, bool b)
+        {
+            return 0;
+        }
+    }
 
 }
