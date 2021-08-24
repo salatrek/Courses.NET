@@ -10,9 +10,9 @@ namespace Calculator_UnitTests_.Test
     public class Calculator_UnitTests_Test
     {
         [Theory]
-        [InlineData(8, 2, (8 - 2))]
-        [InlineData(14, 7, (14 - 7))]
-        [InlineData(12, 15, (12 - 15))]
+        [InlineData(8f, 2f, (8f - 2f))]
+        [InlineData(14f, 7f, (14f - 7f))]
+        [InlineData(12f, 15f, (12f - 15f))]
         public void SubtractNumbers(float a, float b, float expectedResult)
         {
             //Arrange
@@ -26,9 +26,9 @@ namespace Calculator_UnitTests_.Test
         }
 
         [Theory]
-        [InlineData(15, 7, (15 + 7))]
-        [InlineData(-5, -7, ((-5) + (-7)))]
-        [InlineData(8.7, 7.1, (8.7 + 7.1))]
+        [InlineData(15f, 7f, (15f + 7f))]
+        [InlineData(-5f, -7f, ((-5f) + (-7f)))]
+        [InlineData(8.7f, 7.1f, (8.7f + 7.1f))]
         public void SumNumbers(float a, float b, float expectedResult)
         {
             //Arrange
@@ -42,9 +42,9 @@ namespace Calculator_UnitTests_.Test
         }
 
         [Theory]
-        [InlineData(3, 7, (3 * 7))]
-        [InlineData(4.7, 7.2, (4.7 * 7.2))]
-        [InlineData(-5, -7, (-5) * (-7))]
+        [InlineData(3f, 7f, (3f * 7f))]
+        [InlineData(4.7f, 7.2f, (4.7f * 7.2f))]
+        [InlineData(-5f, -7f, (-5f) * (-7f))]
         public void MultiplyNumbers(float a, float b, float expectedResult)
         {
             //Arrange
@@ -58,8 +58,8 @@ namespace Calculator_UnitTests_.Test
         }
 
         [Theory]
-        [InlineData(3, 7, (3 / 7))]
-        [InlineData(49.5, 4, (49.5 / 4))]
+        [InlineData(3f, 7f, (3f / 7f))]
+        [InlineData(49.5f, 4f, (49.5f / 4f))]
         public void DivideNumbers_Positive(float a, float b, float expectedResult)
         {
             //Arrange
@@ -78,7 +78,7 @@ namespace Calculator_UnitTests_.Test
             //Arrange
             var calculator = new Calculator();
             //Assert
-            Assert.ThrowsAsync<DivideByZeroException>(() => calculator.DivideNumbers(11, 0));
+            Assert.Throws<DivideByZeroException>(() => calculator.DivideNumbers(11, 0));
         }
     }
 }
