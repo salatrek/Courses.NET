@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TenthLesson(UnitTests)", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TenthLesson(UnitTests).Tests", "TenthLesson(UnitTests).Tests\TenthLesson(UnitTests).Tests.csproj", "{673E05A7-BA03-4203-B711-7FB0837D23F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EleventhLesson(Http)", "EleventhLesson(Http)\EleventhLesson(Http).csproj", "{0E63241D-71FF-4D8C-A2F9-F27CAAF5177C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EleventhLesson(Http)", "EleventhLesson(Http)\EleventhLesson(Http).csproj", "{0E63241D-71FF-4D8C-A2F9-F27CAAF5177C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwelfthLesson(Threading)", "TwelfthLesson(Threading)\TwelfthLesson(Threading).csproj", "{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{0E63241D-71FF-4D8C-A2F9-F27CAAF5177C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E63241D-71FF-4D8C-A2F9-F27CAAF5177C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E63241D-71FF-4D8C-A2F9-F27CAAF5177C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
