@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EleventhLesson(Http)", "Ele
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwelfthLesson(Threading)", "TwelfthLesson(Threading)\TwelfthLesson(Threading).csproj", "{CD5161EB-7ADB-42AF-9F16-AD0B092D8C29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{D869CE1E-3DA4-4F76-B263-910F84B97138}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{D869CE1E-3DA4-4F76-B263-910F84B97138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadHomeWork(array)", "ThreadHomeWork(array)\ThreadHomeWork(array).csproj", "{060EF0CF-CEBC-496E-A031-203EE9F8CC81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{D869CE1E-3DA4-4F76-B263-910F84B97138}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D869CE1E-3DA4-4F76-B263-910F84B97138}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D869CE1E-3DA4-4F76-B263-910F84B97138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{060EF0CF-CEBC-496E-A031-203EE9F8CC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060EF0CF-CEBC-496E-A031-203EE9F8CC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060EF0CF-CEBC-496E-A031-203EE9F8CC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060EF0CF-CEBC-496E-A031-203EE9F8CC81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
