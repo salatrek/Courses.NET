@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Unit21JobExecutor
+namespace JobExecutor
 {
     public interface IJobExecutor
     {

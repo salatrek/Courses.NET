@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Unit21JobExecutor
+namespace JobExecutor
 {
     public class JobExecutor : IJobExecutor, IDisposable
     {
@@ -96,8 +96,8 @@ namespace Unit21JobExecutor
 
                     if (action != null)
                     {
-                        ThreadPool.QueueUserWorkItem(
-                            (object unused) =>
+                        Task.Factory.StartNew(
+                            () =>
                             {
                                 _semaphore.WaitOne();
                                 try

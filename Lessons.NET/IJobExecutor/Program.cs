@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Unit21JobExecutor
+namespace JobExecutor
 {
     internal static class Program
     {

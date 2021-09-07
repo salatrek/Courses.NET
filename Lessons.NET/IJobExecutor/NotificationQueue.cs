@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unit21JobExecutor
+namespace JobExecutor
 {
     public class NotificationQueue<T>
     {
